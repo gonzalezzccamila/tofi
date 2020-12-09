@@ -942,4 +942,16 @@ form.sign-in-form {
 .mapa{
   padding: 50px 10% 50px 10%;
 }
-/**********************************ACORDIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOON*********************************************/
+/**********************************HHHHHHHHHHHHHHHHHHHHHHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOMEEEEEEEEEEEEEEEEEEEEEEEEEEEE*********************************************/
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
