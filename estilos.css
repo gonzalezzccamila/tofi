@@ -9,7 +9,7 @@
   #padreNav{
     width: 100%;
     height: 80px;
-    background-color: #c4c4c4 ; 
+    background-color: #D9CFCF ; 
     display: flex;
     list-style: none;
     align-items: center;
@@ -67,3 +67,165 @@
     transform: scale(0.8);
     transition: all 0.3s ease;
   }
+  @media (max-width: 940px){
+    .padreNav .menu-btn i{
+      display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+      content: "\f00d";
+    }
+    .padreNav img{
+      display: flex;
+      justify-content: center;
+    }
+    .padreNav ul{
+      position: fixed ;
+      top: 80px;
+      left: -100%;
+      background: #1f1f1f;;
+      height: 100vh;
+      width: 100%;
+      display: block;
+      text-align:center;
+      transition: all 0.3s ease
+    }
+    #click:checked ~ ul{
+      left: 0%;
+    }
+    .padreNav ul li{
+      margin: 40px o;
+    }
+    .padreNav ul li a{
+     font-size: 20px;
+     display: block;
+    }
+    .padreNav ul li a:hover,
+    .padreNav ul li a.active{
+    color:#6e3e6e;
+    background: none;
+  }
+}
+    @media (max-width: 940px){
+      #padreNav .menu-btn i{
+        display: block;
+      }
+      #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+      }
+      #padreNav img{
+        display: flex;
+        justify-content: center;
+       }
+      #padreNav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #1f1f1f;;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align:center;
+        transition: all 0.3s ease
+      }
+      #click:checked ~ ul{
+        left: 0%;
+      }
+      #padreNav ul li{
+        margin: 40px o;
+      }
+      #padreNav ul li a{
+         font-size: 20px;
+         display: block;
+      }
+      #padreNav ul li a:hover,
+      #padreNav ul li a.active{
+      color:#6e3e6e;
+      background: none;
+      }
+    }
+
+    /************************************************************************GRIDDD*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+}
+
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.grid > article img {
+  max-width: 100%;
+}
+
+.grid .text {
+  padding: 20px;
+}
+
+    /************************ESTRELLITAS*****************************************************************************/
+.rating-estrellitas {
+  display: flex;
+  flex-wrap: wrap;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+
+.rating {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  height: 50px;
+  position: relative;
+}
+
+.rating-0 {
+  filter: grayscale(100%);
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-top: auto;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23e3e3e3' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+  transition: .3s;
+}
+
+.rating > input:checked ~ label,
+.rating > input:checked ~ label ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+
+.rating > input:not(:checked) ~ label:hover,
+.rating > input:not(:checked) ~ label:hover ~ label {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+
+.feedback {
+  max-width: 360px;
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0 4px 30px rgba(0,0,0,.05);
+}
