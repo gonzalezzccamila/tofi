@@ -145,13 +145,16 @@
     }
 
     /************************ESTRELLITAS*****************************************************************************/
-.rating-estrellitas {
+    .containerestrella{
+        padding: 0 0 0 40%;
+    }
+    .rating-estrellitas {
   display: flex;
   flex-wrap: wrap;
   height: 30px;
   align-items: center;
   justify-content: center;
-  padding: 0px;
+  padding: 0px 0 0 50px;
 }
 
 .rating {
@@ -503,9 +506,6 @@ footer h4 a {
 /******************************************************************************************************************************************/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
-.logincontainer{
-
-}
 .forms-container {
   position: absolute;
   width: 100%;
