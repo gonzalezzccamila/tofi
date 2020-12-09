@@ -965,3 +965,12 @@ form.sign-in-form {
   box-shadow: 10px 15px 7px #C7C7C7;
 
 }
+.texto{
+  padding-top: 10px;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: white;
+    color: #4A235A;
+    text-align: center;
+
+}
