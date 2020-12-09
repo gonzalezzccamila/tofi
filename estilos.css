@@ -943,15 +943,25 @@ form.sign-in-form {
   padding: 50px 10% 50px 10%;
 }
 /**********************************HHHHHHHHHHHHHHHHHHHHHHOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOMEEEEEEEEEEEEEEEEEEEEEEEEEEEE*********************************************/
-.row {
-  display: flex;
+
+.containergrid__itemsHref{
+  background: #f7f7f7;
+	display: grid;
+	padding: 70px 100px 100px 100px;
+	grid-template-columns: repeat(4,1fr);
+	grid-column-gap: 10px;
 }
 
-.column {
-  flex: 50%;
+.containergrid__itemsHref .grid__itemsHref {
+	padding: 1em;
+
 }
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+.containergrid__itemsHref .grid__itemsHref:hover {
+ 
+  -webkit-transform: scale(0.5);  
+  -ms-transform: scale(0.5); 
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+  box-shadow: 10px 15px 7px #C7C7C7;
+
 }
