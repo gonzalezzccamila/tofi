@@ -144,10 +144,10 @@
       }
     }
 /*FORMULARIO**********************************************************/
-.formulario {
-  background: url(media/fundadoras.jpg) no-repeat center;
-  background-size: cover;
-  padding: 40px; }
+
+.galeria{
+  width:100%;
+}
 
 .formulario h1 {
   text-align: center;
